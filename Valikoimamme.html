@@ -10,53 +10,47 @@
 <body>
 
 <div class="container mt-3">
-    <div class="table-responsive">
-  <h2>Henkilöstömme esittelyt</h2>
-  <p>Mikko, meidän sommelierimme ja viinimestarimme, on kuin kävelevä viinitietosanakirja. Hän on viettänyt vuosia viinitarhoilla ympäri maailmaa ja osaa suositella juuri sinulle sopivan viinin niin juhlahetkiin kuin arkisempaankin tilanteeseen. Mikon intohimo on erityisesti vanhat eurooppalaiset viinit, ja hän rakastaa jakaa tietonsa viinien valmistusprosessista ja historiasta.</p>            
-  <p>Anna on viiniparien mestari! Hänen erikoisosaamisensa on ruoan ja viinin yhdistämisessä, ja hän osaa luoda täydellisiä makuelämyksiä. Olipa suunnitelmissasi romanttinen illallinen tai suuri juhla, Anna tietää tarkalleen, mikä viini tuo aterianne maut esiin parhaalla mahdollisella tavalla.</p>            
-  <p>Tomi, meidän nuorin viininharrastajamme, on energinen ja aina ajan tasalla uusimmista viinimaailman trendeistä. Tomi rakastaa löytää harvinaisia uutuuksia ja eksoottisia makuja, ja hän onkin meidän viinikauppamme seikkailija, joka tuo tarjolle mielenkiintoisia viinejä ympäri maailman.</p>            
-  <p>Sanna, viinimatkojen järjestämisen mestari, vie asiakkaat unohtumattomille viiniseikkailuille maailman parhaisiin viinialueisiin. Hänen laajat yhteytensä ja paikallistuntemuksensa takaavat ainutlaatuiset kokemukset, joihin kuuluvat viinitilavierailut, eksklusiiviset maistelut ja syvä sukellus viinialueiden kulttuureihin. Sannan räätälöidyt matkat tarjoavat elämyksiä, jotka jäävät mieleen ikuisesti!</p>            
-  <table class="table table-hover">
-    <thead>
-        <h2>Henkilöstömme yhteystiedot</h2>
-      <tr>
-        <th>Titteli</th>
-        <th>Nimi</th>
-        <th>Sähköposti</th>
-        <th>Puhelin</th>
-      </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>Viinuri</td>
-        <td>Mikko Mäskikäs</td>
-        <td>sanna@karahviini.fi</td>
-        <td>+358 50 987 6543</td>
-      </tr>
-      <tr>
-        <td>Viinuri</td>
-        <td>Anna Pullo</td>
-        <td>sanna@karahviini.fi</td>
-        <td>+358 50 987 6543</td>
-      </tr>
-      <tr>
-        <td>Matkanjohtaja</td>
-        <td>Sanna Sakka</td>
-        <td>sanna@karahviini.fi</td>
-        <td>+358 44 765 4321
-        </td>
-      </tr>
-      <tr>
-        <td>Webmaster</td>
-        <td>Ilmari Immonen</td>
-        <td>ilmari@karahviini.fi</td>
-        <td>+358 41 234 5678</td>
-      </tr>
-    </tbody>
-  </table>
+  <h2>Accordion Example</h2>
+  <p><strong>Note:</strong> The <strong>data-bs-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+          Collapsible Group Item #1
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+        Collapsible Group Item #2
+      </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+          Collapsible Group Item #3
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-
-
+    
 </body>
 </html>
