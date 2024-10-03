@@ -32,5 +32,29 @@
         <p>&copy; 2024 Basic HTML Page</p>
     </footer>
 
-</body>
+</body> 
 </html>
+for(var i = 0; i < data.opintojakso.sisalto.length; i++) {
+    teksti += "<li>" + data.opintojakso.sisalto[i] + "</li>";
+}
+
+teksti += "</ul>";
+
+teksti += "<ul>";
+
+
+    teksti += "</ul>";
+
+    teksti += "<p>" + data.tekniikat[0].linkki + "</p>";
+
+    teksti += "<ul>";
+
+    for(var i = 0; i < data.tekniikat.length; i++) {
+        teksti += "<li>" + data.tekniikat[i].aihe + " " +
+            "<a href=data.tekniikat[i].linkki>" + 
+            data.tekniikat[i].linkki + "</a></li>";
+        console.log(teksti);        
+    }
+    <a href="url">link text</a>;
+
+    teksti += "</ul>";
