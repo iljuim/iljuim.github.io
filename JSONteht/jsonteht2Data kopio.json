@@ -1,0 +1,132 @@
+{
+  "kurssikoodi": "DIG007AS2A",
+  "kurssin_nimi": "Digitekniikat",
+  "opintopisteet": "5 op",
+  "alku_pvm": "19.08.2024",
+  "loppu_pvm": "11.10.2024",
+  "kesto_viikkoina": 8,
+  "kuva": "“https://github.com/iljuim/iljuim.github.io/blob/main/digitekniikat.jpg?raw=true”",
+  "opiskelijat": [
+    {
+      "etunimi": "Aino",
+      "sukunimi": "Virtanen"
+    },
+    {
+      "etunimi": "Elias",
+      "sukunimi": "Mäkelä"
+    },
+    {
+      "etunimi": "Laila",
+      "sukunimi": "Ahmed"
+    },
+    {
+      "etunimi": "Veeti",
+      "sukunimi": "Korhonen"
+    },
+    {
+      "etunimi": "Sofia",
+      "sukunimi": "Karjalainen"
+    },
+    {
+      "etunimi": "Ibrahim",
+      "sukunimi": "Hussein"
+    },
+    {
+      "etunimi": "Matti",
+      "sukunimi": "Lahtinen"
+    },
+    {
+      "etunimi": "Anna-Leena",
+      "sukunimi": "Nieminen"
+    },
+    {
+      "etunimi": "Ahmed",
+      "sukunimi": "Al-Saidi"
+    },
+    {
+      "etunimi": "Niilo",
+      "sukunimi": "Salonen"
+    },
+    {
+      "etunimi": "Milja",
+      "sukunimi": "Järvinen"
+    },
+    {
+      "etunimi": "Fatima",
+      "sukunimi": "Ali"
+    },
+    {
+      "etunimi": "Jussi",
+      "sukunimi": "Heikkinen"
+    },
+    {
+      "etunimi": "Laura",
+      "sukunimi": "Peltonen"
+    },
+    {
+      "etunimi": "Mehmet",
+      "sukunimi": "Kaya"
+    },
+    {
+      "etunimi": "Emil",
+      "sukunimi": "Saarinen"
+    },
+    {
+      "etunimi": "Kalle",
+      "sukunimi": "Rantanen"
+    },
+    {
+      "etunimi": "Leena",
+      "sukunimi": "Koskinen"
+    },
+    {
+      "etunimi": "Rami",
+      "sukunimi": "Mohamed"
+    },
+    {
+      "etunimi": "Kaisa",
+      "sukunimi": "Mäkinen"
+    },
+    {
+      "etunimi": "Yasmin",
+      "sukunimi": "Hassan"
+    },
+    {
+      "etunimi": "Antti",
+      "sukunimi": "Lehtinen"
+    },
+    {
+      "etunimi": "Niko",
+      "sukunimi": "Savolainen"
+    },
+    {
+      "etunimi": "Aisha",
+      "sukunimi": "Ibrahim"
+    },
+    {
+      "etunimi": "Oskari",
+      "sukunimi": "Laitinen"
+    },
+    {
+      "etunimi": "Amira",
+      "sukunimi": "Abdelrahman"
+    },
+    {
+      "etunimi": "Teemu",
+      "sukunimi": "Tuominen"
+    },
+    {
+      "etunimi": "Jari",
+      "sukunimi": "Aalto"
+    },
+    {
+      "etunimi": "Hawa",
+      "sukunimi": "Sharif"
+    },
+    {
+      "etunimi": "Samira",
+      "sukunimi": "Mussa"
+    }
+  ]
+}
+
