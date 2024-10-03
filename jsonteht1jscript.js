@@ -1,4 +1,4 @@
-fetch('https://run.mocky.io/v3/ea76bd01-464c-47e1-b599-f8f09896c23b')
+fetch('https://raw.githubusercontent.com/iljuim/iljuim.github.io/refs/heads/main/digikurssi.json')
 
     // Muunnetaan vastaus JSON muotoon
     
@@ -65,7 +65,7 @@ fetch('https://run.mocky.io/v3/ea76bd01-464c-47e1-b599-f8f09896c23b')
 
         // teksti-muuttujan sisällön tulostus
 
-        document.getElementById("vastaus2").innerHTML = teksti;
+        document.getElementById("vastaus").innerHTML = teksti;
 
 
     }
