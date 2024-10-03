@@ -1,4 +1,4 @@
-fetch('https://run.mocky.io/v3/01201723-ebd0-4676-9f24-6b9e712526f5')
+fetch('https://github.com/iljuim/iljuim.github.io/blob/7a34d050390641ef34da6cad009d224453e6eaf8/digikurssi.json')
 
     // Muunnetaan vastaus JSON muotoon
     
