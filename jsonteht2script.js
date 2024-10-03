@@ -36,7 +36,9 @@ fetch('https://raw.githubusercontent.com/iljuim/iljuim.github.io/refs/heads/main
         tiedot += "<p>Kesto viikkoina: " + data.kesto_viikkoina + "</p>";
         tiedot += "<p>Alkupäivämäärä: " + data.alku_pvm + "</p>";
         tiedot += "<p>Loppupäivämäärä: " + data.loppu_pvm + "</p>";
+
         tiedot += "<p><img src=" + data.kuva + " alt='kuva'></p>";
+        
         tiedot += "<p>Kurssin opiskelijat</p>";
         
         tiedot += "<ul>";
