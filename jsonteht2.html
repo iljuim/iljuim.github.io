@@ -3,30 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="jsonteht2css.css">
+    <link rel="stylesheet" href="#">
     <title>Basic HTML Page</title>
     
 </head>
 <body>
 
     <header>
-        <h1>Welcome to My Basic HTML Page</h1>
+        <h1>Digitekniikat-kurssi, JSON-tehtävä 2</h1>
     </header>
 
     <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="jsonteht1.html">Json–tehtävä 1</a>
+        <a href="#"></a>
+        <a href="#"></a>
     </nav>
+    
 
     <script src="jsonteht2script.js"></script>
     
-<div id="vastaus2"></div>
+<div id="kurssi"></div>
 
-    <section>
-        <h2>About This Page</h2>
-        <p></p>
-    </section>
 
     <footer>
         <p>&copy; 2024 Basic HTML Page</p>
@@ -34,27 +31,3 @@
 
 </body> 
 </html>
-for(var i = 0; i < data.opintojakso.sisalto.length; i++) {
-    teksti += "<li>" + data.opintojakso.sisalto[i] + "</li>";
-}
-
-teksti += "</ul>";
-
-teksti += "<ul>";
-
-
-    teksti += "</ul>";
-
-    teksti += "<p>" + data.tekniikat[0].linkki + "</p>";
-
-    teksti += "<ul>";
-
-    for(var i = 0; i < data.tekniikat.length; i++) {
-        teksti += "<li>" + data.tekniikat[i].aihe + " " +
-            "<a href=data.tekniikat[i].linkki>" + 
-            data.tekniikat[i].linkki + "</a></li>";
-        console.log(teksti);        
-    }
-    <a href="url">link text</a>;
-
-    teksti += "</ul>";
