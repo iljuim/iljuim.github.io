@@ -1,29 +1,120 @@
-h1 {
-    text-align: center
+/* Base styling for the entire page */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
-h2 {
+/* Header styling */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
     text-align: center;
 }
 
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+/* Navigation bar */
 nav {
+    background-color: #00509E;
+    padding: 15px;
     text-align: center;
 }
 
-p {
-    color:black;
-    text-align: center;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
-.parent {
-    border: 1px solid black;
-    margin: 1rem;
-    padding: 2rem 2rem;
+nav a:hover {
+    color: #f0c808;
+}
+
+/* Main content area */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Headings within the main content */
+main h2 {
+    color: #003366;
+    margin-top: 0;
+    font-size: 2rem;
+    border-bottom: 2px solid #f0c808;
+    padding-bottom: 10px;
+}
+
+main p {
+    font-size: 1.1rem;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #003366;
+    color: white;
     text-align: center;
-  }
-  .child {
-    display: inline-block;
-    border: 1px solid black;
-    padding: 1rem 1rem;
-    vertical-align: middle;
-  }
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Button styling */
+button {
+    background-color: #00509E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f0c808;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    main {
+        padding: 15px;
+    }
+}

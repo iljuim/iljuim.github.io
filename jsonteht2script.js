@@ -32,7 +32,10 @@ fetch('https://raw.githubusercontent.com/iljuim/iljuim.github.io/refs/heads/main
         var tiedot = "";
 
         tiedot = "<h1>" + data.kurssin_nimi + "</h1>";
-        tiedot += "<p>" + data.kurssikoodi + "</p>";
+        tiedot += "<p>" + data.kurssikoodi + " " + data.opintopisteet + "</p>";
+        tiedot += "<p>Kesto viikkoina: " + data.kesto_viikkoina + "</p>";
+        tiedot += "<p>Alkupäivämäärä: " + data.alku_pvm + "</p>";
+        tiedot += "<p>Loppupäivämäärä: " + data.loppu_pvm + "</p>";
         tiedot += "<p><img src=" + data.kuva + " alt='kuva'></p>";
         tiedot += "<p>Kurssin opiskelijat</p>";
         
