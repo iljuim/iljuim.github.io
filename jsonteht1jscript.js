@@ -39,8 +39,24 @@ fetch('https://raw.githubusercontent.com/iljuim/iljuim.github.io/refs/heads/main
         " " + data.opintojakso.tunnus +
         " " + data.opintojakso.opintopisteet + " op" + "</h3>";
 
-        teksti = "<p>" + data.sisalto[0] + "</p>";
-     
+        teksti += "<ul>";
+
+        for(var i = 0; i < data.opintojakso.sisalto.length; i++) {
+            teksti += "<li>" + data.opintojakso.sisalto[i] + "</li>";
+        }
+
+        teksti += "</ul>";
+
+
+
+        for(var i = 0; i < data.tekniikat.length; i++) {
+            teksti += "<li>" + data.tekniikat[i].aihe + " " +
+                "<a href=data.tekniikat[i].linkki>" + 
+                data.tekniikat[i].linkki + "</a></li>";
+            console.log(teksti);        
+        }
+
+
 
         document.getElementById("vastaus").innerHTML = teksti;
     }
