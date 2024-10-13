@@ -67,7 +67,7 @@ fetch('https://rata.digitraffic.fi/api/v1/live-trains/station/HKI?departing_trai
 
 function junat(data) {
 
-    var aika = "";
+    var aika = ""; 
     var maaranpaa = "";
     var vika = data[i].timeTableRows.length - 1
 

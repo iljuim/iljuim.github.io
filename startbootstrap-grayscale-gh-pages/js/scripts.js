@@ -54,74 +54,51 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 
-fetch('http://www.omdbapi.com/?i=tt3896198&apikey=d359a86e')
+fetch('https://rata.digitraffic.fi/api/v1/live-trains/station/HKI?departing_trains=100&include_nonstopping=false')
 
+
+    .then(function (response) { // Muunnetaan vastaus JSON muotoon
+        return response.json()
+    })
+
+
+    .then(function (responseJson) { // Käsitellään muunnettu (eli JSON muotoinen) vastaus
+        lahtevat(responseJson);
+        console.log(responseJson);
+    })
+
+
+    .catch(function (error) { // Jos tuli jokin virhe
+        document.getElementById("lahtevatJunat").innerHTML =
+            "<p>Tietoa ei pystytä hakemaan</p>";
+        console.log(error);
+
+    })
+
+function lahtevat(data) {
+
+    var lahtevat = "";
+    var pvm = "";
+    var aika = pvm.substring(0,10) + " kello: " + pvm.substring(11,5);
     
-.then(function(response) { // Muunnetaan vastaus JSON muotoon
-    return response.json()
-})
 
+    for (i = 0; i < data.length; i++) {
+        lahtevat += "<p> Juna " + data[i].trainType + " " + data[i].trainNumber + " lähtee " + data[i].timeTableRows[0].scheduledTime;
 
-.then(function (responseJson) { // Käsitellään muunnettu (eli JSON muotoinen) vastaus
-    elokuvanPaikka(responseJson);
-    console.log(responseJson);
-})
-
-
-.catch(function (error) { // Jos tuli jokin virhe
-    document.getElementById("elokuvanSijainti").innerHTML = 
-    "<p>Tietoa ei pystytä hakemaan</p>";
-    console.log(error);
-
-})
-
-function elokuvanPaikka(data) {
-
-    var sijainti = "";
-
-    sijainti = data.Ratings[0];
-
-
-
-  //  ilmateksti = "<p>" + data.name + "</p>";
-  //  ilmateksti += "<p>Kuvaus: " + data.weather[0].description + "</p>";
-  //  ilmateksti += "<p>Lämpötila: " + data.main.temp + "&degC</p>";
-  //  ilmateksti += "<p>Tuulen nopeus " + data.wind.speed + " m/s</p>";
-  //  ilmateksti += "<p><img src ='" + kuva + "' atl='kuva'></p";
-   
-   document.getElementById("elokuvanSijainti").innerHTML = sijainti;
-}
-
-fetch('https://api.openweathermap.org/data/2.5/weather?q=chicago&appid=aefb0a1e38e7d7cb6e88ab3d175c7252')
-
+        //for (j = 0; j < data[i].timeTableRows.length; j++) {
+        //        lahtevat += "<p> Juna " + data[i].trainType + " " + data[i].trainNumber + " lähtee " + aika;
+        //        pvm += data[i].timeTableRows[0].scheduledTime;
+        
+      //  for (j = 0; j < data[i].timeTableRows.length; j++) {
+      //      if (data[i].timeTableRows[j].stationShortCode=="TPE");
+      //          if (data[i].timeTableRows[j].type=="DEPARTURE");
+      //              if (data[i].trainCategory =="Long-distance");
+      //                  if (data[i].timeTableRows[0].stationShortCode);
+      //                      vika = data[i].timeTableRows.length - 1;
+      //                      maaranpaa = data[i].timeTableRows[vika].stationShortCode;
+      //                      aika = data[i].timeTableRows[j].scheduledTime;
+      //  }
     
-.then(function(response) { // Muunnetaan vastaus JSON muotoon
-    return response.json()
-})
-
-
-.then(function (responseJson) { // Käsitellään muunnettu (eli JSON muotoinen) vastaus
-    saa(responseJson);
-    console.log(responseJson);
-})
-
-
-.catch(function (error) { // Jos tuli jokin virhe
-    document.getElementById("saa").innerHTML = 
-    "<p>Tietoa ei pystytä hakemaan</p>";
-    console.log(error);
-
-})
-
-function saa(data) {
-
-    var ilmateksti = "";
-   // var kuva = 'https://openweathermap.org/img/wn/' + data.weather[0].icon + '.png';
-
-    ilmateksti = "<p>" + data.name + "</p>";
-    ilmateksti += "<p>Kuvaus: " + data.weather[0].description + "</p>";
-    ilmateksti += "<p>Tuulen nopeus " + data.wind.speed + " m/s</p>";
-   // ilmateksti += "<p><img src ='" + kuva + "' atl='kuva'></p";
-   
-   document.getElementById("saa").innerHTML = ilmateksti;
+    }
+    document.getElementById("lahtevatJunat").innerHTML = lahtevat;
 }
